@@ -8,6 +8,10 @@ Papaya is a tool to test if a MongoDB/NoSQL-based web application is vulnerable 
 ```
 python3 papaya.py TARGET_URL
 ```
+- test for vulnerability
+- if application is vulnerable, search for a string that is unique in the positive response and set it as the identifier
+- choose an attack
+
 ### Dependencies
 
 requests_html
