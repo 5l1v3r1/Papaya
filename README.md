@@ -10,4 +10,4 @@ python3 papaya.py TARGET_URL
 ```
 ### Dependencies
 
-requests_html
+pip install -r requirements.txt
