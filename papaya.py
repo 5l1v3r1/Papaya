@@ -85,7 +85,7 @@ def choice_password():
     clear_terminal()
     if username == 'admin':
         log("Default user 'admin' used. Maybe get a username first", 3)
-    log(f"Testing password length for user: '{user}'")
+    log(f"Testing password length for user: '{username}'")
     log(f"Target: '{url}'", 3)
     pw_length = get_password_length(username)
     if pw_length:
@@ -122,7 +122,7 @@ def log(string, type=1):
 def not_vulnerable(coming_from_check=False):
     log("Not vulnerable. Check parameters", 2)
     if not coming_from_check:
-        log("Did you forget to set the success-identifier?", 3)
+        log("Did you forget to set the success-identifier?", 2)
 
 def send_sessionless_post(params):
     try:
